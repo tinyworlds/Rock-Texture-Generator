@@ -27,10 +27,10 @@
 (plug-in-solid-noise 0 image layer2 TRUE FALSE 1234 14 2 4)
 
 ;create a bump-map on LAYER1 using LAYER2 with INTENSITY
-(plug-in-bump-map 1 image layer1 layer2 135 45 (/ size 24) 0 0 0 0 FALSE FALSE 0)
+(plug-in-bump-map 1 image layer1 layer2 135 45 (/ size 16) 0 0 0 0 TRUE FALSE 0)
 
 ;turn noise on LAYER2 to normal map
-(plug-in-normalmap 1 image layer2 1 0 (* size 0.005) 0 0 0 0 0 0 0 0 0 layer2)
+(plug-in-normalmap 1 image layer2 1 0 (* size 0.01) 0 0 0 0 0 0 0 0 0 layer2)
 
 ; Create and update the display
   (gimp-display-new image)
