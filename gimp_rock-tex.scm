@@ -26,7 +26,13 @@
 ;create noise with SEED on LAYER2
 (plug-in-solid-noise 0 image layer2 TRUE FALSE 1234 14 2 4)
 
-;create a bump-map on LAYER1 using LAYER2 with INTENSITY
+;create a bump-map on LAYER1 using LAYER2
+(plug-in-bump-map 1 image layer1 layer2 135 45 (/ size 16) 0 0 0 0 TRUE FALSE 0)
+
+;create noise with SEED on LAYER2
+(plug-in-solid-noise 0 image layer2 TRUE FALSE 1234 14 2 4)
+
+;create a bump-map on LAYER1 using LAYER2
 (plug-in-bump-map 1 image layer1 layer2 135 45 (/ size 16) 0 0 0 0 TRUE FALSE 0)
 
 ;turn noise on LAYER2 to normal map
@@ -41,13 +47,13 @@
 ))
 
 (script-fu-register "rock-tex"
-_"<Image>/tinyworlds/rock-tex"
+_"<Image>/Filters/Render/Rock-Texture"
                     "Generate Rock Texture"
                     "Generates a rock texture and normal map using perlin noise.
 					Requires the GIMP normal map plugin to work."
                     "Rick Hoppmann <www.tinyworlds.org>"
                     "July the 5th, 2015"
                     ""
-                    SF-ADJUSTMENT "Texture Size" '(512 1 4096 1 50 0 1)
+                    SF-ADJUSTMENT "Texture Size" '(1024 1 4096 1 50 0 1)
 					SF-COLOR      "Color"         '(125 121 112)
 )
