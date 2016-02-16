@@ -2,7 +2,7 @@
 * generates game-ready rock textures
 * creates both diffuse and normal map
 * easy and fast to use  
-![](http://orig10.deviantart.net/603e/f/2015/186/6/f/example3_by_rick_tinyworlds-d901hbe.jpg) 
+![](https://github.com/tinyworlds/Rock-Texture-Generator/blob/master/rocktex_example.jpg?raw=true) 
  
 ## How-to Install
 1. Install the Normal Map plugin (required): http://registry.gimp.org/node/69
