@@ -15,8 +15,8 @@
 2. A dialogue window opens. You can set the size (in pixels) here and change the rocks color. Press on OK once you are done.
 3. Another dialogue window opens. Change the values until you are satisfied.
 4. Be sure that you've checked "tileable" and click on OK.  
-4.1. Step 3 and 4 are repeated - this gives the rock additional detail! :)  
-5. Done! You're texture is generated!
+5. Step 3 and 4 are repeated - this gives the rock additional detail! :)  
+6. Done! You're texture is generated!
 
 ## License
 CC0/Public Domain
